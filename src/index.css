@@ -1,0 +1,51 @@
+@import './app/library/bootstrap.min.css';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  overflow: hidden !important;
+}
+
+.btn {
+  border-radius: 15px !important;
+}
+
+.btn-success {
+  background: #84C7AE !important;
+  border: 0;
+}
+
+.btn-success:active {
+  box-shadow: 0 0 0 .2rem #C1E3D6 !important;
+}
+
+.form-control {
+  height: 50px;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  font-size: 14px !important;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+select.form-control {
+  padding: 10px !important;
+  height: 50px;
+}
+
+.form-control:focus {
+  border: 1.5px solid transparent;
+  box-shadow: 0 0 0 .2rem #C1E3D6 !important;
+}

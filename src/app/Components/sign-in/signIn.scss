@@ -1,0 +1,99 @@
+#sign_in, #sign_up {
+    position: relative;
+    min-width: 100% !important;
+    min-height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #A7D7C5 !important;
+    overflow: hidden;
+    .sign_in_block, .sign_up_block {
+        max-width: 400px;
+        text-align: center;
+        font-family: "Gill Sans", sans-serif;
+        background: #F6FBF9;
+        border-radius: 50px;
+        padding: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+        z-index: 999;
+        h1 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 72px;
+            text-align: center;
+            color: #212B27;
+        }
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            text-align: center;
+            color: #32403B;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            &.sign_in_up a {
+                font-size: 14px !important;
+                color: #32403B;
+                text-decoration: underline !important;
+            }
+        }
+
+        .btn_block {
+            button {
+                width: 200px;
+                height: 50px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                text-align: center;
+                color: #FFFFFF;
+                padding: 0;
+            }
+        }
+    }
+
+    &::before {
+        position: absolute;
+        top: -250px;
+        left: -250px;
+        content: "";
+        width: 500px;
+        height: 500px;
+        background: #C1E3D6;
+        border-radius: 160px;
+        transform: rotate(-45deg);
+        z-index: 1;
+    }
+    &::after {
+        position: absolute;
+        bottom: -250px;
+        right: -250px;
+        content: "";
+        width: 500px;
+        height: 500px;
+        background: #C1E3D6;
+        border-radius: 160px;
+        transform: rotate(-45deg);
+        z-index: 1;
+    }
+
+
+
+    @media (min-width: 500px) {
+        .sign_in_block {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding: 50px !important;
+        }
+        &::before {
+            top: -150px;
+            left: -150px;
+        }
+        &::after {
+            bottom: -150px;
+            right: -150px;
+        }
+    }
+}

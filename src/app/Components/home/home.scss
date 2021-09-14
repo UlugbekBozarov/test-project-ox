@@ -1,0 +1,88 @@
+#home_page {
+    #search {
+        width: 100%;
+        height: 140px !important;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    
+        .search_block {
+            height: 70px;
+            width: 100%;
+            background: #3f9b79 !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .form-group {
+                width: 100%;
+                margin-bottom: 0 !important;
+                input {
+                    width: 100% !important;
+                    border: 0;
+                    background: transparent;
+                    box-shadow: inset 0 0 0 0 !important;
+                    color: #fff;
+                    font-size: 16px;
+                    &::placeholder {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .lists_block {
+            height: 70px;
+            width: 100%;
+            margin-top: 20px;
+            background: #3f9b79 !important;
+            padding: 0 10px;
+
+            .form-group {
+                width: 100%;
+                height: 100%;
+                select {
+                    width: 100%;
+                    height: 100%;
+                    border: 0;
+                    color: #fff;
+                    background: transparent;
+                    box-shadow: inset 0 0 0 0 !important;
+                    padding-left: 20px;
+
+                    option {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 576px) {
+        #search {
+            height: 70px !important;
+            display: flex !important;
+            justify-content: center;
+            .search_block {
+                width: 70% !important;
+            }
+            .lists_block {
+                margin-top: 0 !important;
+                margin-left: 20px;
+                width: 20% !important;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        #search {
+            .search_block {
+                width: 50% !important;
+            }
+            .lists_block {
+                width: 20% !important;
+            }
+        }
+    }
+}
